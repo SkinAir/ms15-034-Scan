@@ -20,3 +20,8 @@ python3 ms-socket.py url.txt
 
 输出`result.txt`
 
+
+
+未加去除`http://`和`https://`
+
+自行记事本`ctrl+h`替换
