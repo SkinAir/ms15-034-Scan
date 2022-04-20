@@ -3,13 +3,24 @@ from importlib.resources import path
 import socket
 import sys
 
-# try:
-#     path=sys.argv[1]
-# except:
-#     print('python3 ms2.py url.txt')
-#     sys.exit()
+banner = '''\033[1;33;40m
+                          ____ .________         _______  ________     _____  
+  _____   ______         /_   ||   ____/         \   _  \ \_____  \   /  |  | 
+ /     \ /  ___/  ______  |   ||____  \   ______ /  /_\  \  _(__  <  /   |  |_
+|  Y Y  \\___ \  /_____/  |   |/       \ /_____/ \  \_/   \/       \/    ^   /
+|__|_|  /____  >          |___/______  /          \_____  /______  /\____   | 
+      \/     \/                      \/                 \/       \/      |__| 
+'''
 
-path = "./url.txt"
+try:
+    print(banner)
+    path=sys.argv[1]
+except:
+    print('python3 ms2.py url.txt')
+    sys.exit()
+
+# path = "./url.txt"
+
 
 hexAllFfff = b"18446744073709551615"
 req1 = b"GET / HTTP/1.0\r\n\r\n"
